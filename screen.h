@@ -1,5 +1,5 @@
 //includes the function prototypes for screen manipulation
-enum COLOR{BLACK=30,RED ,GREEN,YELLOW,BLUE,MAGENTA,CYAN,WHITE};
+enum COLORS{BLACK=30,RED ,GREEN,YELLOW,BLUE,MAGENTA,CYAN,WHITE};
 #define UNICODE
 #define BAR "\u2590"   //unicode
 

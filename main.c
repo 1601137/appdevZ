@@ -24,8 +24,8 @@ int main(int argc,char *argv[]){
 */
 	while(1){
  		ret=system("arecord -r16000 -c1 -d1 -f S16_LE -q data.wav");
+		if(WIFSIGNALED(ret)&& WTERMSIG(ret)==SIGINT) break;
 		clearScreen();	//a fresh screen to display
-		if(WIFSIGNALED(ret)&& (WTERMSIG(ret)==SIGINT)break;
 		fp=fopen("data.wav","r");
 		fread(&h,sizeof(h),1,fp); //read the first 44 bytes(size of of file) 
                                   //of file

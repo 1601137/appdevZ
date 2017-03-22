@@ -20,12 +20,12 @@ typedef struct{
         int Subchunk2Size;
 }WAVHDR;
 
-#define DEBUG
+//#define DEBUG
 #define SAMPLE_RATE 16000
 #define PI 3.1415926
 //funtion prototypes
 void displayWAVHDR(WAVHDR h);
 void printID(char *);
-void fillID(const char *d,char s[]);
+void fillID( char *d,const char s[]);
 void testTone(int f,double d);
 void displayWAVdata(short int s[]);
